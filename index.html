@@ -2,17 +2,263 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Лет ми спик фром май харт</title>
+        <title>Табло аэропорта "Простоквашино"</title>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Поле для фильтрации по городу -->
-        <input
-            type="text"
-            placeholder="Город отправления"
-            value=""
-            onkeyup="this.setAttribute('value', this.value)">
-
-        <!-- Здесь применять вашу самую сильную магию -->
+        <h1>Аэропорт "Простоквашино"</h1>
+        <main>
+            <article>
+                <p>Вы можете выбрать для отоброжение:</p>
+                <input name="type1" type="checkbox" value="Прилет" checked>Прилёт
+                <input name="type2" type="checkbox" value="Вылет" checked>Вылет
+                <p>Вы можете указать терминал:</p>
+                <input name="terminalA" type="checkbox" value="А" checked>Терминал А
+                <input name="terminalB" type="checkbox" value="В" checked>Терминал В
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Тип рейса</th>
+                        <th>Номер рейса</th>
+                        <th>Авиакомпания</th>
+                        <th>Логотип авиакомпании</th>
+                        <th>Тип воздушного судна</th>
+                        <th>Аэропорт назначение</th>
+                        <th>Плановое время вылета или прилета</th>
+                        <th>Номер Терминала</th>
+                        <th>Статус рейса</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="depart a belbek">
+                        <td>Вылет</td>
+                        <td>U6-2010</td>
+                        <td>Уральские Авиалинии</td>
+                        <td>
+                            <img src="http://disal603.16mb.com/yandex/aeroport3/avia_logo/ural.jpg"
+                                 alt="logo">
+                        </td>
+                        <td>A-321</td>
+                        <td>Бельбек</td>
+                        <td><time datetime="2015-10-22T12:10">22.10.2015 12:10</time></td>
+                        <td>A</td>
+                        <td>Регистрация</td>
+                    </tr>
+                    <tr class="arrival b prostokvashenno">
+                        <td>Прилет</td>
+                        <td>AS-995</td>
+                        <td>Россия</td>
+                        <td>
+                            <img src="http://disal603.16mb.com/yandex/aeroport3/avia_logo/russia.jpg"
+                                 alt="logo">
+                        </td>
+                        <td>A-320</td>
+                        <td>Простоквашино</td>
+                        <td><time datetime="2015-10-22T12:35">22.10.2015 12:35</time></td>
+                        <td>В</td>
+                        <td>Летит</td>
+                    </tr>
+                    <tr class="depart a sovetskij">
+                        <td>Вылет</td>
+                        <td>A1-01</td>
+                        <td>Аэрофлот</td>
+                        <td>
+                            <img src="http://disal603.16mb.com/yandex/aeroport3/avia_logo/aeroflot.jpg"
+                                 alt="logo">
+                        </td>
+                        <td>B-757-800w</td>
+                        <td>Советский</td>
+                        <td><time datetime="2015-10-22T12:39">22.10.2015 12:39</time></td>
+                        <td>А</td>
+                        <td>Ожижание посадки</td>
+                    </tr>
+                    <tr class="depart b adler-sochi">
+                        <td>Вылет</td>
+                        <td>OA-341</td>
+                        <td>UTAIR</td>
+                        <td>
+                            <img src="http://disal603.16mb.com/yandex/aeroport3/avia_logo/utair.jpg"
+                                alt="logo">
+                        </td>
+                        <td>Л-410</td>
+                        <td>Адлер-Сочи</td>
+                        <td><time datetime="2015-10-22T12:03">22.10.2015 12:03</time></td>
+                        <td>В</td>
+                        <td>Вылет</td>
+                    </tr>
+                    <tr class="arrival a prostokvashenno">
+                        <td>Прилет</td>
+                        <td>IA-4509</td>
+                        <td>Ямал</td>
+                        <td>
+                            <img src="http://disal603.16mb.com/yandex/aeroport3/avia_logo/yamal.jpg"
+                                 alt="logo">
+                        </td>
+                        <td>АТ-45</td>
+                        <td>Простоквашино</td>
+                        <td><time datetime="2015-10-22T12:43">22.10.2015 12:43</time></td>
+                        <td>A</td>
+                        <td>
+                            Задерживается до <time datetime="2015-10-22T16:43">22.10.2015 16:43</time>
+                        </td>
+                    </tr>
+                    <tr class="arrival a prostokvashenno">
+                        <td>Прилет</td>
+                        <td>АА-001</td>
+                        <td>Победа</td>
+                        <td>
+                            <img src="http://disal603.16mb.com/yandex/aeroport3/avia_logo/pobeda.png"
+                                 alt="logo">
+                        </td>
+                        <td>A-319</td>
+                        <td>Простоквашино</td>
+                        <td><time datetime="2015-10-22T12:00">22.10.2015 12:00</time></td>
+                        <td>A</td>
+                        <td>Приземлился</td>
+                    </tr>
+                    <tr class="depart b pushkin">
+                        <td>Вылет</td>
+                        <td>Z0-666</td>
+                        <td title="Летаем и слава богу">Алапаевские Авиалинии</td>
+                        <td>
+                            <img src="http://disal603.16mb.com/yandex/aeroport3/avia_logo/alapaevsk.jpg"
+                                 alt="logo">
+                        </td>
+                        <td>Х-999</td>
+                        <td>Пушкин</td>
+                        <td><time datetime="2015-10-22T12:59">22.10.2015 12:59</time></td>
+                        <td>В</td>
+                        <td>Регистрация</td>
+                    </tr>
+                    <tr class="arrival a prostokvashenno">
+                        <td>Прилет</td>
+                        <td>SQ-0563</td>
+                        <td>British Airways</td>
+                        <td>
+                            <img src="http://disal603.16mb.com/yandex/aeroport3/avia_logo/british.png"
+                                 alt="logo">
+                        </td>
+                        <td>CRJ-200</td>
+                        <td>Простоквашено</td>
+                        <td><time datetime="2015-10-22T12:45">22.10.2015 12:45</time></td>
+                        <td>А</td>
+                        <td>По расписанию</td>
+                    </tr>
+                    <tr class="depart a maj-gatka">
+                        <td>Вылет</td>
+                        <td>RT-091</td>
+                        <td>Сибирь S7</td>
+                        <td>
+                            <img src="http://disal603.16mb.com/yandex/aeroport3/avia_logo/s7.jpg"
+                                 alt="logo">
+                        </td>
+                        <td>T4-204</td>
+                        <td>Май-Гатка</td>
+                        <td><time datetime="2015-10-22T12:12">22.10.2015 12:12</time></td>
+                        <td>А</td>
+                        <td>Отменен</td>
+                    </tr>
+                    <tr class="depart a Kolcovo">
+                        <td>Вылет</td>
+                        <td>GO-001</td>
+                        <td title="Мы используем только одноразовые самолеты">GOLDEN FLY</td>
+                        <td>
+                            <img src="http://disal603.16mb.com/yandex/aeroport3/avia_logo/gold.jpg"
+                                 alt="logo">
+                        </td>
+                        <td>A1-1001</td>
+                        <td>Кольцово</td>
+                        <td><time datetime="2015-10-22T13:00">22.10.2015 13:00</time></td>
+                        <td>А</td>
+                        <td>Посадка закончена</td>
+                    </tr>
+                    <tr class="depart b Oktjabrskij">
+                        <td>Вылет</td>
+                        <td>IA-4979</td>
+                        <td>Ямал</td>
+                        <td>
+                            <img src="http://disal603.16mb.com/yandex/aeroport3/avia_logo/yamal.jpg"
+                                 alt="logo">
+                        </td>
+                        <td>А-319</td>
+                        <td>Октябрьский</td>
+                        <td><time datetime="2015-10-22T12:15">22.10.2015 12:15</time></td>
+                        <td>В</td>
+                        <td>Ожидание посадки</td>
+                    </tr>
+                    <tr class="depart b nojabrskij">
+                        <td>Вылет</td>
+                        <td>QW-091</td>
+                        <td>Сибирь S7</td>
+                        <td>
+                            <img src="http://disal603.16mb.com/yandex/aeroport3/avia_logo/s7.jpg"
+                                 alt="logo">
+                        </td>
+                        <td>AT-45</td>
+                        <td>Ноябрьский</td>
+                        <td><time datetime="2015-10-22T12:37">22.10.2015 12:37</time></td>
+                        <td>В</td>
+                        <td>Ожидается посадка</td>
+                    </tr>
+                    <tr class="arrival b prostokvashenno">
+                        <td>Прилет</td>
+                        <td>SD-5953</td>
+                        <td>Аэрофлот</td>
+                        <td>
+                            <img src="http://disal603.16mb.com/yandex/aeroport3/avia_logo/aeroflot.jpg"
+                                 alt="logo">
+                        </td>
+                        <td>B-757-200</td>
+                        <td>Простоквашенно</td>
+                        <td><time datetime="2015-10-22T12:59">22.10.2015 12:59</time></td>
+                        <td>В</td>
+                        <td>Отменен</td>
+                    </tr>
+                    <tr class="depart a Kolcovo">
+                        <td>Вылет</td>
+                        <td>U6-2210</td>
+                        <td>Уральские Авиалинии</td>
+                        <td>
+                            <img src="http://disal603.16mb.com/yandex/aeroport3/avia_logo/ural.jpg"
+                                 alt="logo">
+                        </td>
+                        <td>Т4-204</td>
+                        <td>Кольцово</td>
+                        <td><time datetime="2015-10-22T12:30">22.10.2015 12:30</time></td>
+                        <td>A</td>
+                        <td>Посадка законченна</td>
+                    </tr>
+                    <tr class="depart b adler-sochi" data-city-from="Москва">
+                        <td>Вылет</td>
+                        <td>PA-15</td>
+                        <td>British Airways</td>
+                        <td>
+                            <img src="http://disal603.16mb.com/yandex/aeroport3/avia_logo/british.png"
+                                 alt="logo">
+                        </td>
+                        <td>A-320</td>
+                        <td>Адлер-Сочи</td>
+                        <td><time datetime="2015-10-22T12:55">22.10.2015 12:55</time></td>
+                        <td>В</td>
+                        <td>Вылет</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <input
+                        id="123"
+                        name="qwe"
+                        type="text"
+                        placeholder="Город отправления"
+                        value=""
+                        onkeyup="this.setAttribute('value', this.value)">
+            </article>
+            <form>
+                <p>Введите номер телефона и email и мы отправим вам данные в виде смс</p>
+                <input type="email" placeholder="email" required>
+                <input type="tel" pattern="[+]{0,1}[7-8]{1}[0-9]{10}"
+                       placeholder="введите номер телефона" required>
+                <button type="submit">Отправить данные о рейсе на телефон</button>
+            </form>
+        </main>
     </body>
 </html>
