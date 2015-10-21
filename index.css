@@ -1,0 +1,88 @@
+table
+{
+    font-size: 16px;
+    text-align: center;
+    border-spacing: 0px 0px;
+}
+
+img
+{
+    width:140px;
+    height:45px;
+}
+
+thead
+{
+    color: #FFFFFF;
+    background:#000000;
+}
+
+tbody tr:nth-child(2n+1)
+{
+    color: #FFFFFF;
+    background: #4C4C4C ;
+}
+
+tbody tr:nth-child(2n)
+{
+    color: #FFFFFF;
+    background:#8E8E8E ;
+}
+
+tbody tr:hover
+{
+    color: #0000FF;
+    background: red ;
+}
+
+button
+{
+    visibility: hidden;
+}
+
+input:valid + input:valid + button
+{
+    visibility: visible;
+}
+
+[name="type1"]:not(:checked) ~  table tbody .arrival
+{
+    display: none;
+}
+
+[name="type2"]:not(:checked) ~  table tbody .depart
+{
+    display: none;
+}
+
+[name="terminalA"]:not(:checked) ~  table tbody .a
+{
+    display: none;
+}
+
+input[name="terminalB"]:not(:checked) ~  table tbody .b
+{
+    display: none;
+}
+
+/* не работает при значении q нечего не происходит
+input#123[value='q'] ~  .adler-sochi
+{
+    display: none;
+    color:magenta!important;
+    font-size: 46px!important;
+}
+*/
+
+/*
+Название
+belbek
+prostokvashenno
+sovetskij
+pushkin
+adler-sochi
+maj-gatka
+Kolcovo
+Oktjabrskij
+nojabrskij
+*/
